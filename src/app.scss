@@ -9,8 +9,10 @@
 
 header {
   height: 150px;
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid #8b8686;
+  position: fixed;
+  background-color: #fff;
 
   .nav-top {
     @include flexBetween;
@@ -68,5 +70,20 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 150px;
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
 }
